@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Red+Hat+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+    <title>learn-smart</title>
+</head>
+
+<body class="overf-h">
+    <div class="wrapper flex f-dir-col overf-h h-100">
+        <header class="header fw-bold fs18 f-shrink flex-C justify-btw p10 overf-h">
+            <div class="my-form cur hover-prime">my form</div>
+            <div class="create-form cur hover-prime">Create form</div>
+        </header>
+        <section class="section f-grow flex justify-C p20 overf-s">
+            <div class="popup-input-box p30">
+
+                <form action="#" class="form-body flex f-dir-col h-100">
+                    <div class="f-shrink flex f-dir-col g30">
+                        <div class="form-input-pack row">
+                            <div class="form-set flex-C col-6">
+                                <label for="firstname" class="form-label ">first name</label>
+                                <input type="text" id="firstname" class="form-controller">
+                            </div>
+                            <div class="form-set flex-C col-6">
+                                <label for="lastname" class="form-label">last name</label>
+                                <input type="text" id="lastname" class="form-controller">
+                            </div>
+                            <div class="form-set flex-C col-6">
+                                <label for="email" class="form-label">email id</label>
+                                <input type="email" id="email" class="form-controller">
+                            </div>
+                            <div class="form-set flex-C col-6">
+                                <label for="mobile" class="form-label">mobile no</label>
+                                <input type="tel" id="mobile" class="form-controller" size="5">
+                            </div>
+                        </div>
+
+                        <div class="dropdown-section row g30 flex-C">
+                            <label  class="form-label ">city</label>
+                            <div class="dropdown-wrap col-3 pos-rel">
+                                
+                                <div class="dropdown-input">
+                                    
+                                    <input type="text"  class="city-select" value="bangalore" readonly>
+                                    <div class="dropdown-down-arrow flex-C justify-C cur  ">
+                                        <span class="material-symbols-rounded hover-sec icon" >
+                                            arrow_right
+                                        </span>
+                                    </div>
+                                </div>
+                                <ol class="dropdown-option pos-abs">
+                                    <li class="dropdown-opt-item">chennai</li>
+                                    <li class="dropdown-opt-item">bangalore</li>
+                                    <li class="dropdown-opt-item">mumbai</li>
+                                    <li class="dropdown-opt-item">pune</li>
+                                    <li class="dropdown-opt-item">noida</li>
+                                    <li class="dropdown-opt-item">jaipur</li>
+                                    <li class="dropdown-opt-item">ranchi</li>
+                                    <li class="dropdown-opt-item">patna</li>
+                                    <li class="dropdown-opt-item">kolkata</li>
+                                </ol>
+                            </div>
+                            <label  class="form-label">state</label>
+                            <div class="dropdown-wrap col-3 pos-rel">
+                                <div class="dropdown-input">
+                                    <input type="text" class="city-select" value="karnataka" readonly>
+                                    <div class="dropdown-down-arrow flex-C justify-C cur  ">
+                                        <span class="material-symbols-rounded hover-sec icon" >
+                                            arrow_right
+                                        </span>
+                                    </div>
+                                </div>
+                                <ol class="dropdown-option pos-abs">
+                                    <li class="dropdown-opt-item">karnataka</li>
+                                    <li class="dropdown-opt-item">tamil nadu</li>
+                                    <li class="dropdown-opt-item">mumbai</li>
+                                    <li class="dropdown-opt-item">jharkhand</li>
+                                    <li class="dropdown-opt-item">panjab</li>
+                                    <li class="dropdown-opt-item">rajasthan</li>
+                                    <li class="dropdown-opt-item">bihar</li>
+                                    <li class="dropdown-opt-item">maharastra</li>
+                                    <li class="dropdown-opt-item">west bengal</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="flex-C g10">
+                            <label class="form-label form-label-check">Degree</label>
+                            <div class="degree-select flex-C">
+                                <label for="add" class="form-selection-control">
+                                    <input type="radio" id="add" name="degree" class="form-selection-input d-none">
+                                    <span class=" form-selction-edit form-"></span>
+                                    <p class="form-selection-text form-label">b-tech</p>
+                                </label>
+                                <label class=" form-selection-control">
+                                    <input type="radio" name="degree" class="form-selection-input d-none">
+                                    <span class="form-selction-edit"></span>
+                                    <p class="form-selection-text form-label">m-tech</p>
+                                </label>
+                                <label class="form-selection-control">
+                                    <input type="radio" name="degree" class="form-selection-input d-none">
+                                    <span class="form-selction-edit"></span>
+                                    <p class="form-selection-text form-label">b-arch</p>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class=" flex-C g10">
+                            <label class="form-label form-label-check">skills</label>
+                            <div class="form-checkbox-set flex-C text-captalize">
+                                <label for="html" class="form-selection-control">
+                                    <input type="checkbox" class=" form-selection-input d-none" id="html" name="form-checkbox4">
+                                    <span class="form-selction-edit form-selction-edit-checkbox"></span>
+                                    <p class="form-selection-text form-label">HTML5</p>
+                                </label>
+                                <label for="css" class="form-selection-control">
+                                    <input type="checkbox" class="form-selection-input d-none" id="css" name="form-checkbox4">
+                                    <span class="form-selction-edit form-selction-edit-checkbox"></span>
+                                    <p class="form-selection-text form-label">CSS3</p>
+                                </label>
+                                <label for="javascript" class="form-selection-control">
+                                    <input type="checkbox" class="form-selection-input d-none" id="javascript" name="form-checkbox4">
+                                    <span class="form-selction-edit form-selction-edit-checkbox"></span>
+                                    <p class="form-selection-text form-label">javascript</p>
+                                </label>
+                                <label for="reactjs" class="form-selection-control">
+                                    <input type="checkbox" class="form-selection-input d-none " id="reactjs" name="form-checkbox4">
+                                    <span class="form-selction-edit form-selction-edit-checkbox"></span>
+                                    <p class="form-selection-text form-label">reactjs</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-btn-box row justify-end mt-10 f-grow align-end">
+                        <button class="form-btn col-2 bg-danger">cancel</button>
+                        <input type="reset" class="form-btn col-2 bg-secondary" value="reset">
+                        <input type="submit" class="form-btn col-2 bg-sucess" value="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
