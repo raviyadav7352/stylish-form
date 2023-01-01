@@ -29,22 +29,23 @@
 
                 <form action="#" class="form-body flex f-dir-col h-100">
                     <div class="f-shrink flex f-dir-col g30">
-                        <div class="form-input-pack row">
+                        <div class="form-input-container row">
                             <div class="form-set flex-C col-6">
                                 <label for="firstname" class="form-label ">first name</label>
-                                <input type="text" id="firstname" class="form-controller">
+                                <input type="text" id="firstname" class="form-controller" placeholder="enter first names ">
                             </div>
                             <div class="form-set flex-C col-6">
                                 <label for="lastname" class="form-label">last name</label>
-                                <input type="text" id="lastname" class="form-controller">
+                                <input type="text" id="lastname" class="form-controller" placeholder="enter last name">
                             </div>
                             <div class="form-set flex-C col-6">
                                 <label for="email" class="form-label">email id</label>
-                                <input type="email" id="email" class="form-controller">
+                                <input type="email" id="email" class="form-controller"placeholder="enter email id">
                             </div>
                             <div class="form-set flex-C col-6">
-                                <label for="mobile" class="form-label">mobile no</label>
-                                <input type="tel" id="mobile" class="form-controller" size="5">
+                                <label for="mobile" class="form-label">mobile no.</label>
+                                <input type="number" id="mobile" class="form-controller" placeholder="enter mobile no." 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
                             </div>
                         </div>
 
@@ -145,7 +146,7 @@
                         </div>
                     </div>
 
-                    <div class="form-btn-box row justify-end mt-10 f-grow align-end">
+                    <div class="form-btn-box row justify-end g10 f-grow align-end">
                         <button class="form-btn col-2 bg-danger">cancel</button>
                         <input type="reset" class="form-btn col-2 bg-secondary" value="reset">
                         <input type="submit" class="form-btn col-2 bg-sucess" value="submit">
